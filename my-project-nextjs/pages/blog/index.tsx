@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import { Post } from '../../types/Post'
 
 type Props = {
@@ -10,21 +12,16 @@ const Blog = ({name, posts}: Props) => {
     <div>
       <h1>{name}</h1>
 
-      <h2>{posts.slice(0, 5).map((post) => {
+      <h2>{posts.slice(0, 10).map((post) => {
         return (
-          <div key={post.id}>
-            <p>{post.title}</p>
-          </div>
+          <li key={post.id}>
+            <Link href={`/blog/${post.id}`}>
+              {post.title}
+            </Link>
+          </li>
         )
       })}</h2>
-      {/* <h1>{posts.map((post) => {
-        return (
-          <div key={post.id}>
-            <h2>{`${post.userId}, só teste`}</h2>
-            <p>{post.body}</p>
-          </div>
-        )
-      })}</h1> */}
+      
     </div>
   )
 }
@@ -37,7 +34,8 @@ export const getStaticProps = async () => {
     props: {
       name: 'Adrzinha',
       posts,
-    }
+    },
+    revalidate: 7200,
   }
 }
 
