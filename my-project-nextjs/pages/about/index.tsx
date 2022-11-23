@@ -7,6 +7,7 @@ const About = () => {
   return (
     <div>
       <h1>Page About</h1>
+      <h2>Meu nome é: {process.env.NEXT_PUBLIC_NOME}</h2>
       <p>Count: {count}</p>
 
       <Link href="/about/kaua">Kauã</Link>

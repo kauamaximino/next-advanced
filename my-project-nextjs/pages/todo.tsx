@@ -6,7 +6,7 @@ type Props = {
   todo: Todo[]
 }
 
-const Todo = ({ todo }: Props) => {
+const Todo = () => {
   const [todoList, setTodoList] = useState<Todo[]>([]);
   const [loading, setLoading] = useState<boolean>(false);
 
