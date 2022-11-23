@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import Script from 'next/script';
 
 const About = () => {
   const [count, setCount] = useState(0);
@@ -15,7 +16,13 @@ const About = () => {
 
       <button onClick={() => {setCount(count + 1)}}>Aumentar count</button>
       <button onClick={() => {setCount(count - 1)}}>Diminuir count</button>
-      <button onClick={() => {setCount(0)}}>Zerar count</button>
+      <button onClick={() => { setCount(0) }}>Zerar count</button>
+      
+      <Script
+        src="https://google-analytics.com/analytics.js"
+        strategy="afterInteractive"
+        onLoad={()=> {console.log('Script carregado')}}
+      />
     </div>
   );
 };
