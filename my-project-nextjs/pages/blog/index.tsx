@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { Button } from '../../components/button'
+import styleBtn from '../../styles/button.module.css'
 
 import { Post } from '../../types/Post'
 
@@ -10,6 +12,10 @@ type Props = {
 const Blog = ({name, posts}: Props) => {
   return (
     <div>
+
+      <Button label='Página blog' />
+
+      
       <h1>{name}</h1>
 
       <h2>{posts.slice(0, 10).map((post) => {
