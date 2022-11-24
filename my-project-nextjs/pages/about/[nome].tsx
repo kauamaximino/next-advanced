@@ -13,7 +13,7 @@ const AboutInd = () => {
       <Link href={'/about/pedro'}
       scroll={false}
       >
-        <button>Ir para a página de Pedro</button>
+        <button className='btn btn-primary red'>Ir para a página de Pedro</button>
       </Link>
     </div>
   )

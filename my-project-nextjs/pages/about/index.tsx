@@ -14,9 +14,9 @@ const About = () => {
       <Link href="/about/kaua">Kauã</Link>
       <Link href="/about/maximino">Maximino</Link>
 
-      <button onClick={() => {setCount(count + 1)}}>Aumentar count</button>
-      <button onClick={() => {setCount(count - 1)}}>Diminuir count</button>
-      <button onClick={() => { setCount(0) }}>Zerar count</button>
+      <button className='red' onClick={() => {setCount(count + 1)}}>Aumentar count</button>
+      <button className='btn btn-primary' onClick={() => {setCount(count - 1)}}>Diminuir count</button>
+      <button className='btn btn-primary' onClick={() => { setCount(0) }}>Zerar count</button>
       
       <Script
         src="https://google-analytics.com/analytics.js"
