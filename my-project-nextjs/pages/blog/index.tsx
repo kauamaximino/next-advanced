@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { Button } from '../../components/button'
 import styleBtn from '../../styles/button.module.css'
+import  styles from '../../styles/About.module.css'
 
 import { Post } from '../../types/Post'
 
@@ -16,7 +17,7 @@ const Blog = ({name, posts}: Props) => {
       <Button label='Página blog' />
 
       
-      <h1>{name}</h1>
+      <h1 className={styles.aboutTitle}>{name}</h1>
 
       <h2>{posts.slice(0, 10).map((post) => {
         return (
