@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Head from 'next/head';
 import { useState } from 'react';
 import Script from 'next/script';
 
@@ -9,6 +10,10 @@ const About = () => {
 
   return (
     <div>
+      <Head>
+        <title>About</title>
+      </Head>
+
       <h1>Page About</h1>
       <h2>Meu nome é: {process.env.NEXT_PUBLIC_NOME}</h2>
       <p>Count: {count}</p>

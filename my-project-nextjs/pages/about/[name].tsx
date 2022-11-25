@@ -1,12 +1,16 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router'
 
 const AboutInd = () => {
-  const { query: { nome } } = useRouter();
+  const { query: { name } } = useRouter();
 
   return (
     <div>
-      <h1>About slug de { nome }</h1>
+      <Head>
+        <title>About {name}</title>
+      </Head>
+      <h1>About slug de { name }</h1>
 
       <p>Pathname: {useRouter().pathname}</p>
 
