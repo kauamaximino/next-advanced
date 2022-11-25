@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import pic from '../public/melhor.jpeg'
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
+        <Image src={pic} alt="teste" width={100} height={200}/>
+        
+        
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
