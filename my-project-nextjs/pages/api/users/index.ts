@@ -6,3 +6,6 @@ const handler: NextApiHandler = (request, response) => {
 };
 
 export default handler;
+
+
+// teste VSCode
