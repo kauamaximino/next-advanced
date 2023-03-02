@@ -1,38 +1,44 @@
-import React from 'react'
-import Link from '../components/Link'
+import HomeScreen from '../screens/HomeScreen'
 
-interface TitleProps {
-  children: React.ReactNode,
-  as: string
-}
+export default HomeScreen
 
-function Title({ children, as }: TitleProps) {
-  const Tag = as
+// import React from 'react'
+// import Link from '../components/Link'
+// import Footer from '../components/patterns/Footer'
 
-  return (
-    <React.Fragment>
-      <h2>
-        {children}
-      </h2>
-      <style jsx>{`
-        ${Tag} {
-          color: red;
-          background: #eee;
-        }
-      `}</style>
-    </React.Fragment>
-  )
-}
+// interface TitleProps {
+//   children: React.ReactNode,
+//   as: string
+// }
 
-function HomePage() {
-  return (
-    <React.Fragment>
-      <Title as='h1'>Home</Title>
-      <Link href="faq">
-        Ir para o FAQ
-      </Link>
-    </React.Fragment>
-  )
-}
+// function Title({ children, as }: TitleProps) {
+//   const Tag = as
 
-export default HomePage;
+//   return (
+//     <React.Fragment>
+//       <h2>
+//         {children}
+//       </h2>
+//       <style jsx>{`
+//         ${Tag} {
+//           color: red;
+//           background: #eee;
+//         }
+//       `}</style>
+//     </React.Fragment>
+//   )
+// }
+
+// function HomePage() {
+//   return (
+//     <React.Fragment>
+//       <Title as='h1'>Home</Title>
+//       <Link href="faq">
+//         Ir para o FAQ
+//       </Link>
+//       <Footer />
+//     </React.Fragment>
+//   )
+// }
+
+// export default HomePage;
