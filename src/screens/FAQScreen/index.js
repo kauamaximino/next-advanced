@@ -3,6 +3,8 @@ import Footer from '../../components/patterns/Footer';
 import Link from '../../components/Link';
 import { theme } from '../../theme/theme';
 import { Box, Text } from '../../theme/components';
+import HeadGeneral from '../../components/Head'
+
 
 function FAQScreen({ faq }) {
   return (
@@ -11,6 +13,7 @@ function FAQScreen({ faq }) {
         backgroundColor: theme.colors.neutral["050"]
       }}
     >
+      <HeadGeneral title="FAQ: Perguntas Frequentes" />
       <Box
         as="main"
         styleSheet={{
