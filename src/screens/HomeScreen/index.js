@@ -97,7 +97,9 @@ function SideImage() {
 export default function HomeScreen() {
   return (
     <Box>
-      <Head>Page Home</Head>
+      <Head>
+        <title>Home</title>
+      </Head>
       <Box
         as="main"
         styleSheet={{
