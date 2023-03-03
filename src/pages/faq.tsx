@@ -1,12 +1,11 @@
 import Head  from 'next/head';
 import Link from '../components/Link';
+import HeadGeneral from '@/components/Head';
 
 function FAQPage() {
   return ( 
     <div>
-      <Head>
-        <title>FAQ</title>
-      </Head>
+      <HeadGeneral title="FAQ" />
       <h1>FAQ</h1>
       <Link href="/">Ir para a HomePage</Link>
     </div>  
